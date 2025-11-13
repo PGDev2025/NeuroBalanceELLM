@@ -1,0 +1,1 @@
+console.log("Deploy Ethereum contracts placeholder");
