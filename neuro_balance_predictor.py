@@ -1,8 +1,8 @@
 import joblib
 import pandas as pd
 
-model = joblib.load("neuro_balance_model.pkl")
-scaler = joblib.load("neuro_balance_scaler.pkl")
+model = joblib.load("neuro_balance_model (2).pkl")
+scaler = joblib.load("neuro_balance_scaler (1).pkl")
 
 def predict_mfi(sentiment_score, activity_score, rest_balance):
     input_df = pd.DataFrame({
@@ -14,3 +14,4 @@ def predict_mfi(sentiment_score, activity_score, rest_balance):
     prediction = model.predict(input_scaled)[0]
 
     return float(prediction)
+
